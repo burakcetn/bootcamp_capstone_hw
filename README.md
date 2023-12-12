@@ -1,16 +1,27 @@
 # bootcamp_hw_capstone
 
-A new Flutter project.
+Tech Career Flutter Bootcamp Capstone Project:
 
-## Getting Started
+Arch: Flutter_bloc
+state_management : Flutter_bloc
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Packages and frameworks : 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Dio : http requests
+sqflite : local database
+SharedPref : token management
+Logger : Logging the app 
+rive : Custom animations
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+App screens : 
+
+
+
+
+<img src="https://github.com/burakcetn/bootcamp_capstone_hw/assets/45536352/12a15312-7bf5-4958-b40d-585809c97884" width=25% height=25%>
+<img src="https://github.com/burakcetn/bootcamp_capstone_hw/assets/45536352/9f93ce36-0917-42ae-8b8c-26e7cf0d1ee6" width=25% height=25%>
+<img src="https://github.com/burakcetn/bootcamp_capstone_hw/assets/45536352/17583f18-47dd-457b-9e3b-03167bc3e7ed" width=25% height=25%>
+
