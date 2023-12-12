@@ -1,5 +1,8 @@
+import 'package:bootcamp_hw_capstone/data/local/mysharedpref.dart';
 import 'package:bootcamp_hw_capstone/ui/view/home_page.dart';
+import 'package:bootcamp_hw_capstone/ui/view/login/login_page.dart';
 import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -7,9 +10,12 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Future.delayed(
-        Duration(seconds: 3),
-        () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => HomePage())));
+        const Duration(seconds: 5),
+        () => MySharedPref.getToken() == ""
+            ? Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => LoginPage()))
+            : Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => HomePage())));
 
     return Scaffold(
       body: Center(
@@ -18,7 +24,16 @@ class SplashScreen extends StatelessWidget {
           children: [
             Column(
               children: [
-                Image.asset("assets/images/splash.jpg"),
+                Hero(
+                  tag: "logoHero",
+                  child: SizedBox(
+                      width: 300,
+                      height: 100,
+                      child: RiveAnimation.asset(
+                        "assets/images/splash.riv",
+                        fit: BoxFit.contain,
+                      )),
+                ),
                 Text(
                   "2HomeService",
                   style: Theme.of(context)
@@ -28,7 +43,7 @@ class SplashScreen extends StatelessWidget {
                 ),
               ],
             ),
-            CircularProgressIndicator(
+            const CircularProgressIndicator(
               color: Colors.redAccent,
             )
           ],
