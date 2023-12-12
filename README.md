@@ -5,7 +5,7 @@ Tech Career Flutter Bootcamp Capstone Project:
 Arch: Flutter_bloc
 state_management : Flutter_bloc
 
-
+```
 Packages and frameworks : 
 
 Dio : http requests
@@ -14,7 +14,7 @@ SharedPref : token management
 Logger : Logging the app 
 rive : Custom animations
 
-
+```
 
 App screens : 
 
