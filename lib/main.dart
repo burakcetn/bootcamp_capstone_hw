@@ -19,7 +19,7 @@ Future<void> main() async {
 
   await MySharedPref.init();
 
-  MySharedPref.setToken("");
+  // MySharedPref.setToken("");
 
   runApp(const MyApp());
 }

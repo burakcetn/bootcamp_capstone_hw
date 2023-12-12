@@ -63,11 +63,11 @@ class _CartPageState extends State<CartPage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
-                          "Genel Toplam : $a",
+                          "Genel Toplam : $a ₺",
                           style: Theme.of(context)
                               .textTheme
                               .titleMedium
-                              ?.copyWith(color: Colors.white),
+                              ?.copyWith(color: Colors.white, fontFamily: ""),
                         ),
                       ),
                     ],
@@ -119,9 +119,12 @@ class _CartPageState extends State<CartPage> {
                                         overflow: TextOverflow.ellipsis,
                                       ),
                                       Text(
-                                          "Fiyat: ${orderedCartList[index].yemekFiyat}"),
+                                          "Fiyat: ${orderedCartList[index].yemekFiyat} ₺",
+                                          style: TextStyle(fontFamily: "")),
                                       Text(
-                                          "Adet: ${orderedCartList[index].yemekSiparisAdet}"),
+                                        "Adet: ${orderedCartList[index].yemekSiparisAdet} ",
+                                        style: TextStyle(fontFamily: ""),
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -148,7 +151,8 @@ class _CartPageState extends State<CartPage> {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 12.0, vertical: 12),
                                       child: Text(
-                                          "Toplam : ${int.parse(orderedCartList[index].yemekFiyat) * orderedCartList[index].yemekSiparisAdet}"),
+                                          "Toplam : ${int.parse(orderedCartList[index].yemekFiyat) * orderedCartList[index].yemekSiparisAdet} ",
+                                          style: TextStyle(fontFamily: "")),
                                     )
                                   ],
                                 ),
